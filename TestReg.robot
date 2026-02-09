@@ -11,6 +11,7 @@ ${USERNAME}   maxma4056@gmail.com
 ${PASSWORD}   maxmazaza123
  
 ***Keywords***
+##Login with Line Account
 Open Browser To App
     Open Browser               ${URL}    ${BROWSER}
     Maximize Browser Window
@@ -41,6 +42,12 @@ Scroll Down To Health History
     Wait Until Element Is Visible    xpath= //*[@id="root"]/div/main/section[2]/div/div[2]/div[1]/a   timeout=5s
     Scroll Element Into View         xpath= //*[@id="root"]/div/main/section[2]/div/div[2]/div[1]/a
     Click Element                    xpath= //*[@id="root"]/div/main/section[2]/div/div[2]/div[1]/a
+
+##Register
+Fill ID 
+    Wait Until Element Is Visible    //*[@id="react-aria749248446-«r1»"]    10s
+    Input Text 	 //*[@id="react-aria749248446-«r1»"]	 1500701356476
+
  
 *** Test Cases ***
  
@@ -49,5 +56,12 @@ Login and Wait for OTP
     Input LINE Email
     Input LINE Password
     Click LINE Login Button
-    Sleep    10s
-    Capture Page Screenshot    after-login.png
+    Sleep    30s
+    Capture Page Screenshot 
+
+Fill From
+    Fill ID
+
+
+
+    
