@@ -1,116 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.12.10 on win32)" generated="2026-02-09T16:22:53.379748" rpa="false" schemaversion="5">
-<suite id="s1" name="TestQLogin" source="E:\StuDEVOP\CloudFlareProjectTest\SoftwareTesting_Q02\TestQLogin.robot">
+<robot generator="Robot 7.4.1 (Python 3.12.10 on win32)" generated="2026-02-09T16:42:56.204291" rpa="false" schemaversion="5">
+<suite id="s1" name="TestReg" source="E:\StuDEVOP\CloudFlareProjectTest\SoftwareTesting_Q02\TestReg.robot">
 <kw name="Open Browser To App" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-02-09T16:22:53.674953" level="INFO">Opening browser 'chrome' to base url 'https://chiangmuan.igovapp.com/'.</msg>
+<msg time="2026-02-09T16:42:56.536494" level="INFO">Opening browser 'chrome' to base url 'https://chiangmuan.igovapp.com/'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-02-09T16:22:53.674953" elapsed="2.239591"/>
+<status status="PASS" start="2026-02-09T16:42:56.536494" elapsed="2.723838"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-02-09T16:22:55.914544" elapsed="0.084705"/>
+<status status="PASS" start="2026-02-09T16:42:59.260332" elapsed="0.035321"/>
 </kw>
-<status status="PASS" start="2026-02-09T16:22:53.674953" elapsed="2.326305"/>
+<status status="PASS" start="2026-02-09T16:42:56.536494" elapsed="2.759159"/>
 </kw>
-<test id="s1-t1" name="Login and Wait for OTP" line="47">
+<test id="s1-t1" name="Login and Wait for OTP" line="54">
 <kw name="Click Login Button On Homepage">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>//*[contains(text(),'เข้าสู่ระบบ')]</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-02-09T16:22:56.001258" elapsed="0.041873"/>
+<status status="PASS" start="2026-02-09T16:42:59.295653" elapsed="0.098437"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-02-09T16:22:56.043131" level="INFO">Clicking element '//*[contains(text(),'เข้าสู่ระบบ')]'.</msg>
+<msg time="2026-02-09T16:42:59.399518" level="INFO">Clicking element '//*[contains(text(),'เข้าสู่ระบบ')]'.</msg>
 <arg>//*[contains(text(),'เข้าสู่ระบบ')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-09T16:22:56.043131" elapsed="1.281601"/>
+<status status="PASS" start="2026-02-09T16:42:59.399518" elapsed="1.244071"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-02-09T16:23:00.326138" level="INFO">Slept 3 seconds.</msg>
+<msg time="2026-02-09T16:43:03.645008" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-02-09T16:22:57.324732" elapsed="3.001406"/>
+<status status="PASS" start="2026-02-09T16:43:00.644588" elapsed="3.000420"/>
 </kw>
-<status status="PASS" start="2026-02-09T16:22:56.001258" elapsed="4.324880"/>
+<status status="PASS" start="2026-02-09T16:42:59.295653" elapsed="4.349355"/>
 </kw>
 <kw name="Input LINE Email">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>//input[@placeholder='Email address']</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-02-09T16:23:00.326138" elapsed="0.004815"/>
+<status status="PASS" start="2026-02-09T16:43:03.645008" elapsed="0.010329"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-02-09T16:23:00.330953" level="INFO">Typing text 'maxma4056@gmail.com' into text field '//input[@placeholder='Email address']'.</msg>
+<msg time="2026-02-09T16:43:03.655337" level="INFO">Typing text 'maxma4056@gmail.com' into text field '//input[@placeholder='Email address']'.</msg>
 <arg>//input[@placeholder='Email address']</arg>
 <arg>${USERNAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-09T16:23:00.330953" elapsed="0.110572"/>
+<status status="PASS" start="2026-02-09T16:43:03.655337" elapsed="0.096288"/>
 </kw>
-<status status="PASS" start="2026-02-09T16:23:00.326138" elapsed="0.115387"/>
+<status status="PASS" start="2026-02-09T16:43:03.645008" elapsed="0.106617"/>
 </kw>
 <kw name="Input LINE Password">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>//input[@placeholder='Password']</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-02-09T16:23:00.441525" elapsed="0.013098"/>
+<status status="PASS" start="2026-02-09T16:43:03.751625" elapsed="0.013840"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-02-09T16:23:00.454623" level="INFO">Typing text 'maxmazaza123' into text field '//input[@placeholder='Password']'.</msg>
+<msg time="2026-02-09T16:43:03.765465" level="INFO">Typing text 'maxmazaza123' into text field '//input[@placeholder='Password']'.</msg>
 <arg>//input[@placeholder='Password']</arg>
 <arg>${PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-09T16:23:00.454623" elapsed="0.055401"/>
+<status status="PASS" start="2026-02-09T16:43:03.765465" elapsed="0.057628"/>
 </kw>
-<status status="PASS" start="2026-02-09T16:23:00.441525" elapsed="0.068499"/>
+<status status="PASS" start="2026-02-09T16:43:03.751625" elapsed="0.071468"/>
 </kw>
 <kw name="Click LINE Login Button">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-02-09T16:23:00.510958" level="INFO">Clicking button '//button[contains(text(),'Log in')]'.</msg>
+<msg time="2026-02-09T16:43:03.823093" level="INFO">Clicking button '//button[contains(text(),'Log in')]'.</msg>
 <arg>//button[contains(text(),'Log in')]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-09T16:23:00.510958" elapsed="0.062483"/>
+<status status="PASS" start="2026-02-09T16:43:03.823093" elapsed="0.059807"/>
 </kw>
-<status status="PASS" start="2026-02-09T16:23:00.510958" elapsed="0.062483"/>
+<status status="PASS" start="2026-02-09T16:43:03.823093" elapsed="0.059807"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-02-09T16:23:10.573812" level="INFO">Slept 10 seconds.</msg>
-<arg>10s</arg>
+<msg time="2026-02-09T16:43:23.883898" level="INFO">Slept 20 seconds.</msg>
+<arg>20s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-02-09T16:23:00.573441" elapsed="10.000371"/>
+<status status="PASS" start="2026-02-09T16:43:03.882900" elapsed="20.000998"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2026-02-09T16:23:10.630855" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="after-login.png"&gt;&lt;img src="after-login.png" width="800px"&gt;&lt;/a&gt;</msg>
-<arg>after-login.png</arg>
+<msg time="2026-02-09T16:43:23.952353" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2026-02-09T16:23:10.573812" elapsed="0.057043"/>
+<status status="PASS" start="2026-02-09T16:43:23.883898" elapsed="0.068455"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary" type="TEARDOWN">
-<msg time="2026-02-09T16:23:10.703237" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-09T16:43:24.031977" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2026-02-09T16:23:10.630855" elapsed="0.072382"/>
+<status status="PASS" start="2026-02-09T16:43:23.952353" elapsed="0.079624"/>
 </kw>
-<status status="PASS" start="2026-02-09T16:22:56.001258" elapsed="14.701979"/>
+<status status="PASS" start="2026-02-09T16:42:59.295653" elapsed="24.736324"/>
+</test>
+<test id="s1-t2" name="Fill From" line="62">
+<kw name="Fill ID">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//input[@maxlength='13' and @minlength='13']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-09T16:43:24.031977" elapsed="0.025234"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-09T16:43:24.057211" level="INFO">Typing text '1500701356476' into text field 'xpath=//input[@maxlength='13' and @minlength='13']'.</msg>
+<arg>xpath=//input[@maxlength='13' and @minlength='13']</arg>
+<arg>1500701356476</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-09T16:43:24.057211" elapsed="0.407655"/>
+</kw>
+<status status="PASS" start="2026-02-09T16:43:24.031977" elapsed="0.432889"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary" type="TEARDOWN">
+<msg time="2026-02-09T16:43:24.548942" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-02-09T16:43:24.466874" elapsed="0.082068"/>
+</kw>
+<status status="PASS" start="2026-02-09T16:43:24.031977" elapsed="0.516965"/>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-02-09T16:23:10.703237" elapsed="2.370796"/>
+<status status="PASS" start="2026-02-09T16:43:24.548942" elapsed="2.428066"/>
 </kw>
-<status status="PASS" start="2026-02-09T16:22:53.379748" elapsed="19.694285"/>
+<status status="PASS" start="2026-02-09T16:42:56.204291" elapsed="30.772717"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="TestQLogin" id="s1" pass="1" fail="0" skip="0">TestQLogin</stat>
+<stat name="TestReg" id="s1" pass="2" fail="0" skip="0">TestReg</stat>
 </suite>
 </statistics>
 <errors>

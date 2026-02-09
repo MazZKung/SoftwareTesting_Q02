@@ -1,15 +1,15 @@
 *** Settings ***
-Library           SeleniumLibrary    timeout=1200s    implicit_wait=5s
+Library           SeleniumLibrary            timeout=1200s    implicit_wait=5s
 Suite Setup       Open Browser To App
 Suite Teardown    Close Browser
 Test Teardown     Capture Page Screenshot
 
 *** Variables ***
-${URL}        https://chiangmuan.igovapp.com/
-${BROWSER}    chrome
-${USERNAME}   maxma4056@gmail.com
-${PASSWORD}   maxmazaza123
- 
+${URL}         https://chiangmuan.igovapp.com/
+${BROWSER}     chrome
+${USERNAME}    maxma4056@gmail.com
+${PASSWORD}    maxmazaza123
+
 ***Keywords***
 ##Login with Line Account
 Open Browser To App
@@ -18,17 +18,17 @@ Open Browser To App
 
 Click Login Button On Homepage
     Wait Until Element Is Visible    //*[contains(text(),'เข้าสู่ระบบ')]    10s
-    Click Element    //*[contains(text(),'เข้าสู่ระบบ')]
-    Sleep    3s
- 
+    Click Element                    //*[contains(text(),'เข้าสู่ระบบ')]
+    Sleep                            3s
+
 Input LINE Email
     Wait Until Element Is Visible    //input[@placeholder='Email address']    10s
-    Input Text    //input[@placeholder='Email address']    ${USERNAME}
- 
+    Input Text                       //input[@placeholder='Email address']    ${USERNAME}
+
 Input LINE Password
     Wait Until Element Is Visible    //input[@placeholder='Password']    10s
-    Input Text    //input[@placeholder='Password']    ${PASSWORD}
- 
+    Input Text                       //input[@placeholder='Password']    ${PASSWORD}
+
 Click LINE Login Button
     Click Button    //button[contains(text(),'Log in')]
 
@@ -37,26 +37,26 @@ Click Arrow Down Icon
 
 Clicl Element Go Health
     Click Element    xpath=//a[contains(@class,"items-center tap-highlight-transparent text-medium no-underline hover:opacity-hover active:opacity-disabled flex flex-col relative overflow-hidden h-auto text-foreground box-border bg-content1 outline-solid outline-transparent data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none")]
- 
+
 Scroll Down To Health History
-    Wait Until Element Is Visible    xpath= //*[@id="root"]/div/main/section[2]/div/div[2]/div[1]/a   timeout=5s
+    Wait Until Element Is Visible    xpath= //*[@id="root"]/div/main/section[2]/div/div[2]/div[1]/a    timeout=5s
     Scroll Element Into View         xpath= //*[@id="root"]/div/main/section[2]/div/div[2]/div[1]/a
     Click Element                    xpath= //*[@id="root"]/div/main/section[2]/div/div[2]/div[1]/a
 
 ##Register
-Fill ID 
-    Wait Until Element Is Visible    //*[@id="react-aria749248446-«r1»"]    10s
-    Input Text 	 //*[@id="react-aria749248446-«r1»"]	 1500701356476
+Fill ID
+    Wait Until Element Is Visible    xpath=//input[@maxlength='13' and @minlength='13']    10s
+    Input Text                       xpath=//input[@maxlength='13' and @minlength='13']    1500701356476
 
- 
+
 *** Test Cases ***
- 
+
 Login and Wait for OTP
     Click Login Button On Homepage
     Input LINE Email
     Input LINE Password
     Click LINE Login Button
-    Sleep    30s
+    Sleep                             20s
     Capture Page Screenshot 
 
 Fill From
@@ -64,4 +64,3 @@ Fill From
 
 
 
-    
