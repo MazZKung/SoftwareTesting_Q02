@@ -1,77 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.12.10 on win32)" generated="2026-02-09T16:04:51.586649" rpa="false" schemaversion="5">
-<suite id="s1" name="TestQHealth" source="E:\วิชาTEST\RobotTester\TestQuiz\TestQHealth.robot">
+<robot generator="Robot 7.4.1 (Python 3.12.10 on win32)" generated="2026-02-09T16:13:25.586331" rpa="false" schemaversion="5">
+<suite id="s1" name="TestQHealth" source="E:\StuDEVOP\CloudFlareProjectTest\SoftwareTesting_Q02\TestQHealth.robot">
 <kw name="Open Browser To App" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-02-09T16:04:51.882678" level="INFO">Opening browser 'chrome' to base url 'https://chiangmuan.igovapp.com/'.</msg>
+<msg time="2026-02-09T16:13:25.885387" level="INFO">Opening browser 'chrome' to base url 'https://chiangmuan.igovapp.com/'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-02-09T16:04:51.882678" elapsed="2.185214"/>
+<status status="PASS" start="2026-02-09T16:13:25.885387" elapsed="2.730915"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-02-09T16:04:54.067892" elapsed="0.032714"/>
+<status status="PASS" start="2026-02-09T16:13:28.617326" elapsed="0.022478"/>
 </kw>
-<status status="PASS" start="2026-02-09T16:04:51.882678" elapsed="2.217928"/>
+<status status="PASS" start="2026-02-09T16:13:25.885387" elapsed="2.754417"/>
 </kw>
 <test id="s1-t1" name="Open Health Database Page" line="14">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//div[contains(@class,"mt-12 cursor-pointer flex flex-col justify-center items-center animate-bounce gap-2")]</arg>
 <arg>15s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-02-09T16:04:54.100606" elapsed="0.032790"/>
+<status status="PASS" start="2026-02-09T16:13:28.641834" elapsed="0.032886"/>
 </kw>
 <kw name="Click Arrow Down Icon">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-02-09T16:04:54.134393" level="INFO">Clicking element 'xpath=//div[contains(@class,"mt-12 cursor-pointer flex flex-col justify-center items-center animate-bounce gap-2")]'.</msg>
+<msg time="2026-02-09T16:13:28.677939" level="INFO">Clicking element 'xpath=//div[contains(@class,"mt-12 cursor-pointer flex flex-col justify-center items-center animate-bounce gap-2")]'.</msg>
 <arg>xpath=//div[contains(@class,"mt-12 cursor-pointer flex flex-col justify-center items-center animate-bounce gap-2")]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-09T16:04:54.134393" elapsed="0.146501"/>
+<status status="PASS" start="2026-02-09T16:13:28.676932" elapsed="0.225427"/>
 </kw>
-<status status="PASS" start="2026-02-09T16:04:54.134393" elapsed="0.146501"/>
+<status status="PASS" start="2026-02-09T16:13:28.675915" elapsed="0.226444"/>
 </kw>
 <kw name="Clicl Element Go Health">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-02-09T16:04:54.280894" level="INFO">Clicking element 'xpath=//a[contains(@class,"items-center tap-highlight-transparent text-medium no-underline hover:opacity-hover active:opacity-disabled flex flex-col relative overflow-hidden h-auto text-foreground box-border bg-content1 outline-solid outline-transparent data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none")]'.</msg>
+<msg time="2026-02-09T16:13:28.903451" level="INFO">Clicking element 'xpath=//a[contains(@class,"items-center tap-highlight-transparent text-medium no-underline hover:opacity-hover active:opacity-disabled flex flex-col relative overflow-hidden h-auto text-foreground box-border bg-content1 outline-solid outline-transparent data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none")]'.</msg>
 <arg>xpath=//a[contains(@class,"items-center tap-highlight-transparent text-medium no-underline hover:opacity-hover active:opacity-disabled flex flex-col relative overflow-hidden h-auto text-foreground box-border bg-content1 outline-solid outline-transparent data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none")]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-09T16:04:54.280894" elapsed="0.101550"/>
+<status status="PASS" start="2026-02-09T16:13:28.903451" elapsed="0.083573"/>
 </kw>
-<status status="PASS" start="2026-02-09T16:04:54.280894" elapsed="0.101550"/>
+<status status="PASS" start="2026-02-09T16:13:28.902359" elapsed="0.084665"/>
 </kw>
 <kw name="Scroll Down To Health History">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath= //*[@id="root"]/div/main/section[2]/div/div[2]/div[1]/a</arg>
 <arg>timeout=5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-02-09T16:04:54.382444" elapsed="0.220172"/>
+<status status="PASS" start="2026-02-09T16:13:28.988055" elapsed="0.232003"/>
 </kw>
 <kw name="Scroll Element Into View" owner="SeleniumLibrary">
 <arg>xpath= //*[@id="root"]/div/main/section[2]/div/div[2]/div[1]/a</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" start="2026-02-09T16:04:54.602616" elapsed="0.284425"/>
+<status status="PASS" start="2026-02-09T16:13:29.220058" elapsed="0.282317"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-02-09T16:04:54.887041" level="INFO">Clicking element 'xpath= //*[@id="root"]/div/main/section[2]/div/div[2]/div[1]/a'.</msg>
+<msg time="2026-02-09T16:13:29.502375" level="INFO">Clicking element 'xpath= //*[@id="root"]/div/main/section[2]/div/div[2]/div[1]/a'.</msg>
 <arg>xpath= //*[@id="root"]/div/main/section[2]/div/div[2]/div[1]/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-09T16:04:54.887041" elapsed="0.748558"/>
+<status status="PASS" start="2026-02-09T16:13:29.502375" elapsed="2.485902"/>
 </kw>
-<status status="PASS" start="2026-02-09T16:04:54.382444" elapsed="1.253155"/>
+<status status="PASS" start="2026-02-09T16:13:28.987024" elapsed="3.001253"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary" type="TEARDOWN">
-<msg time="2026-02-09T16:04:55.708363" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-09T16:13:32.057149" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2026-02-09T16:04:55.635599" elapsed="0.072764"/>
+<status status="PASS" start="2026-02-09T16:13:31.988277" elapsed="0.068872"/>
 </kw>
-<status status="PASS" start="2026-02-09T16:04:54.100606" elapsed="1.607757"/>
+<status status="PASS" start="2026-02-09T16:13:28.639804" elapsed="3.417345"/>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-02-09T16:04:55.708363" elapsed="2.328523"/>
+<status status="PASS" start="2026-02-09T16:13:32.059157" elapsed="2.363023"/>
 </kw>
-<status status="PASS" start="2026-02-09T16:04:51.586649" elapsed="6.450237"/>
+<status status="PASS" start="2026-02-09T16:13:25.586331" elapsed="8.835849"/>
 </suite>
 <statistics>
 <total>
