@@ -43,10 +43,25 @@ Scroll Down To Health History
     Scroll Element Into View         xpath= //*[@id="root"]/div/main/section[2]/div/div[2]/div[1]/a
     Click Element                    xpath= //*[@id="root"]/div/main/section[2]/div/div[2]/div[1]/a
 
+##Click confirm button
+Click Confirm Button
+    Click Element    xpath= //*[@id="«r66»"]/footer/div/button
+
 ##Register
 Fill ID
     Wait Until Element Is Visible    xpath=//input[@maxlength='13' and @minlength='13']    10s
     Input Text                       xpath=//input[@maxlength='13' and @minlength='13']    1500701356476
+
+#Fill Surname
+#    Wait Until Element Is Visible    xpath=//input[@role='combobox' and @aria-autocomplete='list']
+#    Click Element                    xpath=//input[@role='combobox' and @aria-autocomplete='list']
+#    Input Text                       xpath=//input[@role='combobox' and @aria-autocomplete='list']    นาย
+#    Sleep                            3s
+#    Press Keys                       xpath=//input[@role='combobox' and @aria-autocomplete='list']    Arrow_Down    enter
+
+Fill Name
+    Wait Until Element Is Visible    xpath=//input[@aria-labelledby and @type='text']
+    Input Text                       xpath=//input[@aria-labelledby and @type='text']    ยอดศักดิ์
 
 
 *** Test Cases ***
@@ -59,8 +74,17 @@ Login and Wait for OTP
     Sleep                             20s
     Capture Page Screenshot 
 
-Fill From
+Click Confirm
+    Click Confirm Button
+
+Fill From Element
     Fill ID
+
+#Fill Surname Element
+#    Fill Surname
+
+Fill Name Element
+    Fill Name
 
 
 
