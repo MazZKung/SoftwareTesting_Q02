@@ -1,77 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.12.10 on win32)" generated="2026-02-09T16:13:25.586331" rpa="false" schemaversion="5">
-<suite id="s1" name="TestQHealth" source="E:\StuDEVOP\CloudFlareProjectTest\SoftwareTesting_Q02\TestQHealth.robot">
+<robot generator="Robot 7.4.1 (Python 3.12.10 on win32)" generated="2026-02-09T16:22:53.379748" rpa="false" schemaversion="5">
+<suite id="s1" name="TestQLogin" source="E:\StuDEVOP\CloudFlareProjectTest\SoftwareTesting_Q02\TestQLogin.robot">
 <kw name="Open Browser To App" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-02-09T16:13:25.885387" level="INFO">Opening browser 'chrome' to base url 'https://chiangmuan.igovapp.com/'.</msg>
+<msg time="2026-02-09T16:22:53.674953" level="INFO">Opening browser 'chrome' to base url 'https://chiangmuan.igovapp.com/'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-02-09T16:13:25.885387" elapsed="2.730915"/>
+<status status="PASS" start="2026-02-09T16:22:53.674953" elapsed="2.239591"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-02-09T16:13:28.617326" elapsed="0.022478"/>
+<status status="PASS" start="2026-02-09T16:22:55.914544" elapsed="0.084705"/>
 </kw>
-<status status="PASS" start="2026-02-09T16:13:25.885387" elapsed="2.754417"/>
+<status status="PASS" start="2026-02-09T16:22:53.674953" elapsed="2.326305"/>
 </kw>
-<test id="s1-t1" name="Open Health Database Page" line="14">
+<test id="s1-t1" name="Login and Wait for OTP" line="47">
+<kw name="Click Login Button On Homepage">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath=//div[contains(@class,"mt-12 cursor-pointer flex flex-col justify-center items-center animate-bounce gap-2")]</arg>
-<arg>15s</arg>
+<arg>//*[contains(text(),'เข้าสู่ระบบ')]</arg>
+<arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-02-09T16:13:28.641834" elapsed="0.032886"/>
+<status status="PASS" start="2026-02-09T16:22:56.001258" elapsed="0.041873"/>
 </kw>
-<kw name="Click Arrow Down Icon">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-02-09T16:13:28.677939" level="INFO">Clicking element 'xpath=//div[contains(@class,"mt-12 cursor-pointer flex flex-col justify-center items-center animate-bounce gap-2")]'.</msg>
-<arg>xpath=//div[contains(@class,"mt-12 cursor-pointer flex flex-col justify-center items-center animate-bounce gap-2")]</arg>
+<msg time="2026-02-09T16:22:56.043131" level="INFO">Clicking element '//*[contains(text(),'เข้าสู่ระบบ')]'.</msg>
+<arg>//*[contains(text(),'เข้าสู่ระบบ')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-09T16:13:28.676932" elapsed="0.225427"/>
+<status status="PASS" start="2026-02-09T16:22:56.043131" elapsed="1.281601"/>
 </kw>
-<status status="PASS" start="2026-02-09T16:13:28.675915" elapsed="0.226444"/>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-09T16:23:00.326138" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-09T16:22:57.324732" elapsed="3.001406"/>
 </kw>
-<kw name="Clicl Element Go Health">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-02-09T16:13:28.903451" level="INFO">Clicking element 'xpath=//a[contains(@class,"items-center tap-highlight-transparent text-medium no-underline hover:opacity-hover active:opacity-disabled flex flex-col relative overflow-hidden h-auto text-foreground box-border bg-content1 outline-solid outline-transparent data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none")]'.</msg>
-<arg>xpath=//a[contains(@class,"items-center tap-highlight-transparent text-medium no-underline hover:opacity-hover active:opacity-disabled flex flex-col relative overflow-hidden h-auto text-foreground box-border bg-content1 outline-solid outline-transparent data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-09T16:13:28.903451" elapsed="0.083573"/>
+<status status="PASS" start="2026-02-09T16:22:56.001258" elapsed="4.324880"/>
 </kw>
-<status status="PASS" start="2026-02-09T16:13:28.902359" elapsed="0.084665"/>
-</kw>
-<kw name="Scroll Down To Health History">
+<kw name="Input LINE Email">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath= //*[@id="root"]/div/main/section[2]/div/div[2]/div[1]/a</arg>
-<arg>timeout=5s</arg>
+<arg>//input[@placeholder='Email address']</arg>
+<arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-02-09T16:13:28.988055" elapsed="0.232003"/>
+<status status="PASS" start="2026-02-09T16:23:00.326138" elapsed="0.004815"/>
 </kw>
-<kw name="Scroll Element Into View" owner="SeleniumLibrary">
-<arg>xpath= //*[@id="root"]/div/main/section[2]/div/div[2]/div[1]/a</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" start="2026-02-09T16:13:29.220058" elapsed="0.282317"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-09T16:23:00.330953" level="INFO">Typing text 'maxma4056@gmail.com' into text field '//input[@placeholder='Email address']'.</msg>
+<arg>//input[@placeholder='Email address']</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-09T16:23:00.330953" elapsed="0.110572"/>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-02-09T16:13:29.502375" level="INFO">Clicking element 'xpath= //*[@id="root"]/div/main/section[2]/div/div[2]/div[1]/a'.</msg>
-<arg>xpath= //*[@id="root"]/div/main/section[2]/div/div[2]/div[1]/a</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-09T16:13:29.502375" elapsed="2.485902"/>
+<status status="PASS" start="2026-02-09T16:23:00.326138" elapsed="0.115387"/>
 </kw>
-<status status="PASS" start="2026-02-09T16:13:28.987024" elapsed="3.001253"/>
+<kw name="Input LINE Password">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//input[@placeholder='Password']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-09T16:23:00.441525" elapsed="0.013098"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-09T16:23:00.454623" level="INFO">Typing text 'maxmazaza123' into text field '//input[@placeholder='Password']'.</msg>
+<arg>//input[@placeholder='Password']</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-09T16:23:00.454623" elapsed="0.055401"/>
+</kw>
+<status status="PASS" start="2026-02-09T16:23:00.441525" elapsed="0.068499"/>
+</kw>
+<kw name="Click LINE Login Button">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-09T16:23:00.510958" level="INFO">Clicking button '//button[contains(text(),'Log in')]'.</msg>
+<arg>//button[contains(text(),'Log in')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-09T16:23:00.510958" elapsed="0.062483"/>
+</kw>
+<status status="PASS" start="2026-02-09T16:23:00.510958" elapsed="0.062483"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-09T16:23:10.573812" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-09T16:23:00.573441" elapsed="10.000371"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-02-09T16:23:10.630855" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="after-login.png"&gt;&lt;img src="after-login.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>after-login.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-02-09T16:23:10.573812" elapsed="0.057043"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary" type="TEARDOWN">
-<msg time="2026-02-09T16:13:32.057149" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-09T16:23:10.703237" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2026-02-09T16:13:31.988277" elapsed="0.068872"/>
+<status status="PASS" start="2026-02-09T16:23:10.630855" elapsed="0.072382"/>
 </kw>
-<status status="PASS" start="2026-02-09T16:13:28.639804" elapsed="3.417345"/>
+<status status="PASS" start="2026-02-09T16:22:56.001258" elapsed="14.701979"/>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-02-09T16:13:32.059157" elapsed="2.363023"/>
+<status status="PASS" start="2026-02-09T16:23:10.703237" elapsed="2.370796"/>
 </kw>
-<status status="PASS" start="2026-02-09T16:13:25.586331" elapsed="8.835849"/>
+<status status="PASS" start="2026-02-09T16:22:53.379748" elapsed="19.694285"/>
 </suite>
 <statistics>
 <total>
@@ -80,7 +110,7 @@
 <tag>
 </tag>
 <suite>
-<stat name="TestQHealth" id="s1" pass="1" fail="0" skip="0">TestQHealth</stat>
+<stat name="TestQLogin" id="s1" pass="1" fail="0" skip="0">TestQLogin</stat>
 </suite>
 </statistics>
 <errors>
