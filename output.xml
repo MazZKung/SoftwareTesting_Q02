@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.12.10 on win32)" generated="2026-02-11T23:18:11.635652" rpa="false" schemaversion="5">
+<suite id="s1" name="TestReg" source="E:\StuDEVOP\CloudFlareProjectTest\SoftwareTesting_Q02\TestReg.robot">
+<kw name="Open Browser To App" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:11.975832" level="INFO">Opening browser 'chrome' to base url 'https://chiangmuan.igovapp.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-11T23:18:11.975832" elapsed="1.999866"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-11T23:18:13.975698" elapsed="0.029785"/>
+</kw>
+<status status="PASS" start="2026-02-11T23:18:11.975832" elapsed="2.031675"/>
+</kw>
+<test id="s1-t1" name="Login and Wait for OTP" line="15">
+<kw name="Click Login Button On Homepage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//*[contains(text(),'เข้าสู่ระบบ')]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-11T23:18:14.008942" elapsed="0.066565"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:14.075507" level="INFO">Clicking element '//*[contains(text(),'เข้าสู่ระบบ')]'.</msg>
+<arg>//*[contains(text(),'เข้าสู่ระบบ')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:14.075507" elapsed="1.294397"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-11T23:18:18.370141" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-11T23:18:15.369904" elapsed="3.000237"/>
+</kw>
+<status status="PASS" start="2026-02-11T23:18:14.007897" elapsed="4.362244"/>
+</kw>
+<kw name="Input LINE Email">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//input[@placeholder='Email address']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-11T23:18:18.370141" elapsed="0.015496"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:18.385637" level="INFO">Typing text 'maxma4056@gmail.com' into text field '//input[@placeholder='Email address']'.</msg>
+<arg>//input[@placeholder='Email address']</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:18.385637" elapsed="0.090834"/>
+</kw>
+<status status="PASS" start="2026-02-11T23:18:18.370141" elapsed="0.106330"/>
+</kw>
+<kw name="Input LINE Password">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//input[@placeholder='Password']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-11T23:18:18.476471" elapsed="0.015524"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:18.491995" level="INFO">Typing text 'maxmazaza123' into text field '//input[@placeholder='Password']'.</msg>
+<arg>//input[@placeholder='Password']</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:18.491995" elapsed="0.055293"/>
+</kw>
+<status status="PASS" start="2026-02-11T23:18:18.476471" elapsed="0.070817"/>
+</kw>
+<kw name="Click LINE Login Button">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:18.547288" level="INFO">Clicking button '//button[contains(text(),'Log in')]'.</msg>
+<arg>//button[contains(text(),'Log in')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:18.547288" elapsed="0.060995"/>
+</kw>
+<status status="PASS" start="2026-02-11T23:18:18.547288" elapsed="0.060995"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-11T23:18:38.608451" level="INFO">Slept 20 seconds.</msg>
+<arg>20s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-11T23:18:18.608283" elapsed="20.000168"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:38.710603" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-81.png"&gt;&lt;img src="selenium-screenshot-81.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-02-11T23:18:38.608451" elapsed="0.102152"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary" type="TEARDOWN">
+<msg time="2026-02-11T23:18:38.814507" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-82.png"&gt;&lt;img src="selenium-screenshot-82.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-02-11T23:18:38.710603" elapsed="0.103904"/>
+</kw>
+<status status="PASS" start="2026-02-11T23:18:14.007507" elapsed="24.807000"/>
+</test>
+<test id="s1-t2" name="Click Confirm" line="23">
+<kw name="Click Confirm Button">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:38.814507" level="INFO">Clicking element 'xpath= //*[@id="«r66»"]/footer/div/button'.</msg>
+<arg>xpath= //*[@id="«r66»"]/footer/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:38.814507" elapsed="0.111035"/>
+</kw>
+<status status="PASS" start="2026-02-11T23:18:38.814507" elapsed="0.111035"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary" type="TEARDOWN">
+<msg time="2026-02-11T23:18:39.178294" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-83.png"&gt;&lt;img src="selenium-screenshot-83.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-02-11T23:18:38.925542" elapsed="0.252752"/>
+</kw>
+<status status="PASS" start="2026-02-11T23:18:38.814507" elapsed="0.363787"/>
+</test>
+<test id="s1-t3" name="Fill From Element" line="27">
+<kw name="Fill ID">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//input[@maxlength='13' and @minlength='13']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-11T23:18:39.180759" elapsed="0.047789"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:39.229540" level="INFO">Typing text '1500701356476' into text field 'xpath=//input[@maxlength='13' and @minlength='13']'.</msg>
+<arg>xpath=//input[@maxlength='13' and @minlength='13']</arg>
+<arg>1500701356476</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:39.229540" elapsed="0.468719"/>
+</kw>
+<status status="PASS" start="2026-02-11T23:18:39.180759" elapsed="0.517500"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary" type="TEARDOWN">
+<msg time="2026-02-11T23:18:39.772870" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-84.png"&gt;&lt;img src="selenium-screenshot-84.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-02-11T23:18:39.700280" elapsed="0.072590"/>
+</kw>
+<status status="PASS" start="2026-02-11T23:18:39.179286" elapsed="0.593584"/>
+</test>
+<test id="s1-t4" name="Fill Surname Element" line="31">
+<kw name="Fill Surname">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//input[@role='combobox' and @aria-autocomplete='list']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-11T23:18:39.772870" elapsed="0.017038"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:39.789908" level="INFO">Clicking element 'xpath=//input[@role='combobox' and @aria-autocomplete='list']'.</msg>
+<arg>xpath=//input[@role='combobox' and @aria-autocomplete='list']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:39.789908" elapsed="0.090099"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>xpath=//input[@role='combobox' and @aria-autocomplete='list']</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:39.880007" elapsed="0.045335"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:39.925342" level="INFO">Typing text 'นาย' into text field 'xpath=//input[@role='combobox' and @aria-autocomplete='list']'.</msg>
+<arg>xpath=//input[@role='combobox' and @aria-autocomplete='list']</arg>
+<arg>นาย</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:39.925342" elapsed="0.083847"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//li[contains(.,'นาย')]</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-11T23:18:40.010185" elapsed="0.047246"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:40.062721" level="INFO">Clicking element 'xpath=//li[contains(.,'นาย')]'.</msg>
+<arg>xpath=//li[contains(.,'นาย')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:40.057431" elapsed="0.103706"/>
+</kw>
+<status status="PASS" start="2026-02-11T23:18:39.772870" elapsed="0.388584"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary" type="TEARDOWN">
+<msg time="2026-02-11T23:18:40.265750" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-85.png"&gt;&lt;img src="selenium-screenshot-85.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-02-11T23:18:40.162179" elapsed="0.103571"/>
+</kw>
+<status status="PASS" start="2026-02-11T23:18:39.772870" elapsed="0.492880"/>
+</test>
+<test id="s1-t5" name="Fill Name Element" line="34">
+<kw name="Fill Name">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//label[normalize-space()='ชื่อ']/following::input[1]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-11T23:18:40.272678" elapsed="0.053411"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:40.326089" level="INFO">Clicking element 'xpath=//label[normalize-space()='ชื่อ']/following::input[1]'.</msg>
+<arg>xpath=//label[normalize-space()='ชื่อ']/following::input[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:40.326089" elapsed="0.066998"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:40.393087" level="INFO">Typing text 'ยอดศักดิ์' into text field 'xpath=//label[normalize-space()='ชื่อ']/following::input[1]'.</msg>
+<arg>xpath=//label[normalize-space()='ชื่อ']/following::input[1]</arg>
+<arg>ยอดศักดิ์</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:40.393087" elapsed="0.289366"/>
+</kw>
+<status status="PASS" start="2026-02-11T23:18:40.272678" elapsed="0.409775"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary" type="TEARDOWN">
+<msg time="2026-02-11T23:18:40.762944" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-86.png"&gt;&lt;img src="selenium-screenshot-86.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-02-11T23:18:40.682453" elapsed="0.080491"/>
+</kw>
+<status status="PASS" start="2026-02-11T23:18:40.272678" elapsed="0.490266"/>
+</test>
+<test id="s1-t6" name="Fill LastName Element" line="37">
+<kw name="Fill LastName">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//label[normalize-space()='นามสกุล']/following::input[1]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-11T23:18:40.762944" elapsed="0.009734"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:40.782600" level="INFO">Clicking element 'xpath=//label[normalize-space()='นามสกุล']/following::input[1]'.</msg>
+<arg>xpath=//label[normalize-space()='นามสกุล']/following::input[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:40.772678" elapsed="0.072460"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:40.845138" level="INFO">Typing text 'แสงสุวรรณ์' into text field 'xpath=//label[normalize-space()='นามสกุล']/following::input[1]'.</msg>
+<arg>xpath=//label[normalize-space()='นามสกุล']/following::input[1]</arg>
+<arg>แสงสุวรรณ์</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:40.845138" elapsed="0.317614"/>
+</kw>
+<status status="PASS" start="2026-02-11T23:18:40.762944" elapsed="0.399808"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary" type="TEARDOWN">
+<msg time="2026-02-11T23:18:41.242970" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-87.png"&gt;&lt;img src="selenium-screenshot-87.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-02-11T23:18:41.162752" elapsed="0.080218"/>
+</kw>
+<status status="PASS" start="2026-02-11T23:18:40.762944" elapsed="0.480026"/>
+</test>
+<test id="s1-t7" name="Select gender" line="41">
+<kw name="Select list gender">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//label[normalize-space()='เพศ']/ancestor::button</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-11T23:18:41.242970" elapsed="0.022107"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:41.265077" level="INFO">Clicking element 'xpath=//label[normalize-space()='เพศ']/ancestor::button'.</msg>
+<arg>xpath=//label[normalize-space()='เพศ']/ancestor::button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:41.265077" elapsed="0.059898"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//li[normalize-space()='ชาย']</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-11T23:18:41.324975" elapsed="0.017895"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:41.342870" level="INFO">Clicking element 'xpath=//li[normalize-space()='ชาย']'.</msg>
+<arg>xpath=//li[normalize-space()='ชาย']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:41.342870" elapsed="0.090346"/>
+</kw>
+<status status="PASS" start="2026-02-11T23:18:41.242970" elapsed="0.190246"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary" type="TEARDOWN">
+<msg time="2026-02-11T23:18:41.536791" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-88.png"&gt;&lt;img src="selenium-screenshot-88.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-02-11T23:18:41.433216" elapsed="0.103575"/>
+</kw>
+<status status="PASS" start="2026-02-11T23:18:41.242970" elapsed="0.293821"/>
+</test>
+<test id="s1-t8" name="Fill Birt of date" line="44">
+<kw name="Fill Birtday">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:41.543549" level="INFO">Clicking element 'xpath=//div[@role='spinbutton' and @data-type='day']'.</msg>
+<arg>xpath=//div[@role='spinbutton' and @data-type='day']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:41.543549" elapsed="0.062822"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:41.606371" level="INFO">Typing text '27' into text field 'xpath=//div[@role='spinbutton' and @data-type='day']'.</msg>
+<arg>xpath=//div[@role='spinbutton' and @data-type='day']</arg>
+<arg>27</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:41.606371" elapsed="0.082970"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:41.689341" level="INFO">Clicking element 'xpath=//div[@role='spinbutton' and @data-type='month']'.</msg>
+<arg>xpath=//div[@role='spinbutton' and @data-type='month']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:41.689341" elapsed="0.063331"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:41.752672" level="INFO">Typing text '08' into text field 'xpath=//div[@role='spinbutton' and @data-type='month']'.</msg>
+<arg>xpath=//div[@role='spinbutton' and @data-type='month']</arg>
+<arg>08</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:41.752672" elapsed="0.095748"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:41.849084" level="INFO">Clicking element 'xpath=//div[@role='spinbutton' and @data-type='year']'.</msg>
+<arg>xpath=//div[@role='spinbutton' and @data-type='year']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:41.849084" elapsed="0.053600"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:41.902684" level="INFO">Typing text '2548' into text field 'xpath=//div[@role='spinbutton' and @data-type='year']'.</msg>
+<arg>xpath=//div[@role='spinbutton' and @data-type='year']</arg>
+<arg>2548</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:41.902684" elapsed="0.180155"/>
+</kw>
+<status status="PASS" start="2026-02-11T23:18:41.542519" elapsed="0.540320"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary" type="TEARDOWN">
+<msg time="2026-02-11T23:18:42.182670" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-89.png"&gt;&lt;img src="selenium-screenshot-89.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-02-11T23:18:42.085345" elapsed="0.103379"/>
+</kw>
+<status status="PASS" start="2026-02-11T23:18:41.542519" elapsed="0.646205"/>
+</test>
+<test id="s1-t9" name="Fill nationality" line="47">
+<kw name="Fill Nationality">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//label[normalize-space()='สัญชาติ']/following::input[1]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-11T23:18:42.189127" elapsed="0.015785"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:42.204912" level="INFO">Clicking element 'xpath=//label[normalize-space()='สัญชาติ']/following::input[1]'.</msg>
+<arg>xpath=//label[normalize-space()='สัญชาติ']/following::input[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:42.204912" elapsed="0.070067"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:42.274979" level="INFO">Typing text 'ไทย' into text field 'xpath=//label[normalize-space()='สัญชาติ']/following::input[1]'.</msg>
+<arg>xpath=//label[normalize-space()='สัญชาติ']/following::input[1]</arg>
+<arg>ไทย</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:42.274979" elapsed="0.147534"/>
+</kw>
+<status status="PASS" start="2026-02-11T23:18:42.189127" elapsed="0.236329"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary" type="TEARDOWN">
+<msg time="2026-02-11T23:18:42.522913" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-90.png"&gt;&lt;img src="selenium-screenshot-90.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-02-11T23:18:42.425862" elapsed="0.097051"/>
+</kw>
+<status status="PASS" start="2026-02-11T23:18:42.189127" elapsed="0.333786"/>
+</test>
+<test id="s1-t10" name="Fill religion" line="50">
+<kw name="Fill Religion">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//label[normalize-space()='ศาสนา']/following::input[1]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-11T23:18:42.529351" elapsed="0.021692"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:42.551043" level="INFO">Clicking element 'xpath=//label[normalize-space()='ศาสนา']/following::input[1]'.</msg>
+<arg>xpath=//label[normalize-space()='ศาสนา']/following::input[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:42.551043" elapsed="0.050451"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:42.602501" level="INFO">Typing text 'พุทธ' into text field 'xpath=//label[normalize-space()='ศาสนา']/following::input[1]'.</msg>
+<arg>xpath=//label[normalize-space()='ศาสนา']/following::input[1]</arg>
+<arg>พุทธ</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:42.601494" elapsed="0.158832"/>
+</kw>
+<status status="PASS" start="2026-02-11T23:18:42.529351" elapsed="0.230975"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary" type="TEARDOWN">
+<msg time="2026-02-11T23:18:42.872776" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-91.png"&gt;&lt;img src="selenium-screenshot-91.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-02-11T23:18:42.766413" elapsed="0.106363"/>
+</kw>
+<status status="PASS" start="2026-02-11T23:18:42.529351" elapsed="0.343425"/>
+</test>
+<test id="s1-t11" name="Fill phone" line="53">
+<kw name="Fill Phone">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//label[normalize-space()='เบอร์โทรศัพท์']/following::input[1]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-11T23:18:42.872776" elapsed="0.013696"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:42.886472" level="INFO">Clicking element 'xpath=//label[normalize-space()='เบอร์โทรศัพท์']/following::input[1]'.</msg>
+<arg>xpath=//label[normalize-space()='เบอร์โทรศัพท์']/following::input[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:42.886472" elapsed="0.053432"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:42.939904" level="INFO">Typing text '0954488430' into text field 'xpath=//label[normalize-space()='เบอร์โทรศัพท์']/following::input[1]'.</msg>
+<arg>xpath=//label[normalize-space()='เบอร์โทรศัพท์']/following::input[1]</arg>
+<arg>0954488430</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:42.939904" elapsed="0.318239"/>
+</kw>
+<status status="PASS" start="2026-02-11T23:18:42.872776" elapsed="0.386478"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary" type="TEARDOWN">
+<msg time="2026-02-11T23:18:43.349020" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-92.png"&gt;&lt;img src="selenium-screenshot-92.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-02-11T23:18:43.259254" elapsed="0.089766"/>
+</kw>
+<status status="PASS" start="2026-02-11T23:18:42.872776" elapsed="0.476244"/>
+</test>
+<test id="s1-t12" name="Fill House number Element" line="57">
+<kw name="Fill House number">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//label[normalize-space()='บ้านเลขที่']/following::input[1]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-11T23:18:43.349020" elapsed="0.017156"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:43.366176" level="INFO">Clicking element 'xpath=//label[normalize-space()='บ้านเลขที่']/following::input[1]'.</msg>
+<arg>xpath=//label[normalize-space()='บ้านเลขที่']/following::input[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:43.366176" elapsed="0.067620"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:43.433796" level="INFO">Typing text '26/2' into text field 'xpath=//label[normalize-space()='บ้านเลขที่']/following::input[1]'.</msg>
+<arg>xpath=//label[normalize-space()='บ้านเลขที่']/following::input[1]</arg>
+<arg>26/2</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:43.433796" elapsed="0.178984"/>
+</kw>
+<status status="PASS" start="2026-02-11T23:18:43.349020" elapsed="0.263760"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary" type="TEARDOWN">
+<msg time="2026-02-11T23:18:43.702742" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-93.png"&gt;&lt;img src="selenium-screenshot-93.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-02-11T23:18:43.612780" elapsed="0.089962"/>
+</kw>
+<status status="PASS" start="2026-02-11T23:18:43.349020" elapsed="0.353722"/>
+</test>
+<test id="s1-t13" name="Fill Village number Element" line="60">
+<kw name="Fill Village number">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//label[normalize-space()='หมู่ที่']/following::input[1]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-11T23:18:43.707739" elapsed="0.008150"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:43.715889" level="INFO">Clicking element 'xpath=//label[normalize-space()='หมู่ที่']/following::input[1]'.</msg>
+<arg>xpath=//label[normalize-space()='หมู่ที่']/following::input[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:43.715889" elapsed="0.053999"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:43.769888" level="INFO">Typing text '7' into text field 'xpath=//label[normalize-space()='หมู่ที่']/following::input[1]'.</msg>
+<arg>xpath=//label[normalize-space()='หมู่ที่']/following::input[1]</arg>
+<arg>7</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:43.769888" elapsed="0.068211"/>
+</kw>
+<status status="PASS" start="2026-02-11T23:18:43.707739" elapsed="0.130360"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary" type="TEARDOWN">
+<msg time="2026-02-11T23:18:43.939346" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-94.png"&gt;&lt;img src="selenium-screenshot-94.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-02-11T23:18:43.838099" elapsed="0.101247"/>
+</kw>
+<status status="PASS" start="2026-02-11T23:18:43.702742" elapsed="0.236604"/>
+</test>
+<test id="s1-t14" name="Fill Road Element" line="63">
+<kw name="Fill Road">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//label[normalize-space()='ถนน']/following::input[1]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-11T23:18:43.942476" elapsed="0.037878"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:43.980354" level="INFO">Clicking element 'xpath=//label[normalize-space()='ถนน']/following::input[1]'.</msg>
+<arg>xpath=//label[normalize-space()='ถนน']/following::input[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:43.980354" elapsed="0.046150"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:44.026504" level="INFO">Typing text '-' into text field 'xpath=//label[normalize-space()='ถนน']/following::input[1]'.</msg>
+<arg>xpath=//label[normalize-space()='ถนน']/following::input[1]</arg>
+<arg>-</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:44.026504" elapsed="0.072803"/>
+</kw>
+<status status="PASS" start="2026-02-11T23:18:43.942476" elapsed="0.156831"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary" type="TEARDOWN">
+<msg time="2026-02-11T23:18:44.216909" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-95.png"&gt;&lt;img src="selenium-screenshot-95.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-02-11T23:18:44.099307" elapsed="0.117602"/>
+</kw>
+<status status="PASS" start="2026-02-11T23:18:43.939346" elapsed="0.277563"/>
+</test>
+<test id="s1-t15" name="Fill Alley Element" line="66">
+<kw name="Fill Alley">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//label[normalize-space()='ตรอก/ซอย']/following::input[1]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-11T23:18:44.216909" elapsed="0.021659"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:44.238568" level="INFO">Clicking element 'xpath=//label[normalize-space()='ตรอก/ซอย']/following::input[1]'.</msg>
+<arg>xpath=//label[normalize-space()='ตรอก/ซอย']/following::input[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:44.238568" elapsed="0.076098"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:44.314666" level="INFO">Typing text '-' into text field 'xpath=//label[normalize-space()='ตรอก/ซอย']/following::input[1]'.</msg>
+<arg>xpath=//label[normalize-space()='ตรอก/ซอย']/following::input[1]</arg>
+<arg>-</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:44.314666" elapsed="0.080241"/>
+</kw>
+<status status="PASS" start="2026-02-11T23:18:44.216909" elapsed="0.177998"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary" type="TEARDOWN">
+<msg time="2026-02-11T23:18:44.494676" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-96.png"&gt;&lt;img src="selenium-screenshot-96.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-02-11T23:18:44.394907" elapsed="0.099769"/>
+</kw>
+<status status="PASS" start="2026-02-11T23:18:44.216909" elapsed="0.277767"/>
+</test>
+<test id="s1-t16" name="Fill Province Element" line="69">
+<kw name="Fill Province">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//label[normalize-space()='จังหวัด']/ancestor::div[@data-slot='input-wrapper']//input[@role='combobox']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-11T23:18:44.496683" elapsed="0.020409"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:44.517092" level="INFO">Clicking element 'xpath=//label[normalize-space()='จังหวัด']/ancestor::div[@data-slot='input-wrapper']//input[@role='combobox']'.</msg>
+<arg>xpath=//label[normalize-space()='จังหวัด']/ancestor::div[@data-slot='input-wrapper']//input[@role='combobox']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:44.517092" elapsed="0.111600"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>xpath=//label[normalize-space()='จังหวัด']/ancestor::div[@data-slot='input-wrapper']//input[@role='combobox']</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:44.628692" elapsed="0.036783"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:44.665475" level="INFO">Typing text 'เชียงใหม่' into text field 'xpath=//label[normalize-space()='จังหวัด']/ancestor::div[@data-slot='input-wrapper']//input[@role='combobox']'.</msg>
+<arg>xpath=//label[normalize-space()='จังหวัด']/ancestor::div[@data-slot='input-wrapper']//input[@role='combobox']</arg>
+<arg>เชียงใหม่</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:44.665475" elapsed="0.300100"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//li[contains(.,'เชียงใหม่')]</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-11T23:18:44.965575" elapsed="0.251380"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:45.216955" level="INFO">Clicking element 'xpath=//li[contains(.,'เชียงใหม่')]'.</msg>
+<arg>xpath=//li[contains(.,'เชียงใหม่')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:45.216955" elapsed="0.076422"/>
+</kw>
+<status status="PASS" start="2026-02-11T23:18:44.496683" elapsed="0.796694"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary" type="TEARDOWN">
+<msg time="2026-02-11T23:18:45.411560" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-97.png"&gt;&lt;img src="selenium-screenshot-97.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-02-11T23:18:45.293377" elapsed="0.118183"/>
+</kw>
+<status status="PASS" start="2026-02-11T23:18:44.496683" elapsed="0.915242"/>
+</test>
+<test id="s1-t17" name="Fill District Element" line="72">
+<kw name="Fill District">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//label[normalize-space()='อำเภอ']/ancestor::div[@data-slot='input-wrapper']//input[@role='combobox']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-11T23:18:45.413480" elapsed="0.019131"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:45.433622" level="INFO">Clicking element 'xpath=//label[normalize-space()='อำเภอ']/ancestor::div[@data-slot='input-wrapper']//input[@role='combobox']'.</msg>
+<arg>xpath=//label[normalize-space()='อำเภอ']/ancestor::div[@data-slot='input-wrapper']//input[@role='combobox']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:45.432611" elapsed="0.079885"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>xpath=//label[normalize-space()='อำเภอ']/ancestor::div[@data-slot='input-wrapper']//input[@role='combobox']</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:45.512496" elapsed="0.037286"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:45.550475" level="INFO">Typing text 'แม่ริม' into text field 'xpath=//label[normalize-space()='อำเภอ']/ancestor::div[@data-slot='input-wrapper']//input[@role='combobox']'.</msg>
+<arg>xpath=//label[normalize-space()='อำเภอ']/ancestor::div[@data-slot='input-wrapper']//input[@role='combobox']</arg>
+<arg>แม่ริม</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:45.549782" elapsed="0.275387"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//li[contains(.,'แม่ริม')]</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-11T23:18:45.825169" elapsed="0.017386"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:45.842555" level="INFO">Clicking element 'xpath=//li[contains(.,'แม่ริม')]'.</msg>
+<arg>xpath=//li[contains(.,'แม่ริม')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:45.842555" elapsed="0.082811"/>
+</kw>
+<status status="PASS" start="2026-02-11T23:18:45.413480" elapsed="0.511886"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary" type="TEARDOWN">
+<msg time="2026-02-11T23:18:46.049221" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-98.png"&gt;&lt;img src="selenium-screenshot-98.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-02-11T23:18:45.925366" elapsed="0.123855"/>
+</kw>
+<status status="PASS" start="2026-02-11T23:18:45.412922" elapsed="0.636914"/>
+</test>
+<test id="s1-t18" name="Fill SubDistrict Element" line="75">
+<kw name="Fill SubDistrict">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//label[normalize-space()='ตำบล']/ancestor::div[@data-slot='input-wrapper']//input[@role='combobox']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-11T23:18:46.052597" elapsed="0.040222"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:46.092819" level="INFO">Clicking element 'xpath=//label[normalize-space()='ตำบล']/ancestor::div[@data-slot='input-wrapper']//input[@role='combobox']'.</msg>
+<arg>xpath=//label[normalize-space()='ตำบล']/ancestor::div[@data-slot='input-wrapper']//input[@role='combobox']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:46.092819" elapsed="0.081943"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>xpath=//label[normalize-space()='ตำบล']/ancestor::div[@data-slot='input-wrapper']//input[@role='combobox']</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:46.175126" elapsed="0.027975"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:46.203101" level="INFO">Typing text 'สันโป่ง' into text field 'xpath=//label[normalize-space()='ตำบล']/ancestor::div[@data-slot='input-wrapper']//input[@role='combobox']'.</msg>
+<arg>xpath=//label[normalize-space()='ตำบล']/ancestor::div[@data-slot='input-wrapper']//input[@role='combobox']</arg>
+<arg>สันโป่ง</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:46.203101" elapsed="0.154847"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//li[contains(.,'สันโป่ง')]</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-11T23:18:46.359961" elapsed="0.023149"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-11T23:18:46.383470" level="INFO">Clicking element 'xpath=//li[contains(.,'สันโป่ง')]'.</msg>
+<arg>xpath=//li[contains(.,'สันโป่ง')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T23:18:46.383110" elapsed="0.076379"/>
+</kw>
+<status status="PASS" start="2026-02-11T23:18:46.052597" elapsed="0.406892"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary" type="TEARDOWN">
+<msg time="2026-02-11T23:18:46.572880" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-99.png"&gt;&lt;img src="selenium-screenshot-99.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-02-11T23:18:46.460229" elapsed="0.112651"/>
+</kw>
+<status status="PASS" start="2026-02-11T23:18:46.049836" elapsed="0.523044"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-11T23:18:46.572880" elapsed="2.425607"/>
+</kw>
+<status status="PASS" start="2026-02-11T23:18:11.635652" elapsed="37.362835"/>
+</suite>
+<statistics>
+<total>
+<stat pass="18" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="TestReg" id="s1" pass="18" fail="0" skip="0">TestReg</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
