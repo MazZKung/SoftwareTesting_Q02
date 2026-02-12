@@ -61,7 +61,7 @@ Fill Village number Element
     Fill Village number
 
 Fill Road Element
-    Fill Road   
+    Fill Road    
 
 Fill Alley Element
     Fill Alley
@@ -74,6 +74,40 @@ Fill District Element
 
 Fill SubDistrict Element
     Fill SubDistrict
+
+##Address according to ID card
+Checkbox according to ID card
+    Check according to ID card
+
+##Social Infomation
+Fill Job Element
+    Fill Job
+
+Fill Salary Element
+    Fill Salary
+
+Fill Hightet Education Element
+    Fill Hightet Education
+
+Fill Marital status Element
+    Fill Marital status
+
+##footer
+Check Agree terms and conditions Element
+    Check Agree terms and conditions
+
+##send form
+Click Submit from Element
+    Click Submit from
+
+
+
+
+
+
+
+
+
 
 
 ##############--------------------##############
@@ -131,7 +165,7 @@ Fill LastName
 Select list gender
     Wait Until Element Is Visible    xpath=//label[normalize-space()='เพศ']/ancestor::button    10s
     Click Element                    xpath=//label[normalize-space()='เพศ']/ancestor::button
-    Wait Until Element Is Visible    xpath=//li[normalize-space()='ชาย']                            5s
+    Wait Until Element Is Visible    xpath=//li[normalize-space()='ชาย']                        5s
     Click Element                    xpath=//li[normalize-space()='ชาย']
 
 Fill Birtday
@@ -165,11 +199,11 @@ Fill House number
     Click Element                    xpath=//label[normalize-space()='บ้านเลขที่']/following::input[1]
     Input Text                       xpath=//label[normalize-space()='บ้านเลขที่']/following::input[1]    26/2
 
-Fill Village number 
+Fill Village number
     Wait Until Element Is Visible    xpath=//label[normalize-space()='หมู่ที่']/following::input[1]    10s
     Click Element                    xpath=//label[normalize-space()='หมู่ที่']/following::input[1]
     Input Text                       xpath=//label[normalize-space()='หมู่ที่']/following::input[1]    7
-    
+
 Fill Road
     Wait Until Element Is Visible    xpath=//label[normalize-space()='ถนน']/following::input[1]    10s
     Click Element                    xpath=//label[normalize-space()='ถนน']/following::input[1]
@@ -185,7 +219,7 @@ Fill Province
     Click Element                    xpath=//label[normalize-space()='จังหวัด']/ancestor::div[@data-slot='input-wrapper']//input[@role='combobox']
     Clear Element Text               xpath=//label[normalize-space()='จังหวัด']/ancestor::div[@data-slot='input-wrapper']//input[@role='combobox']
     Input Text                       xpath=//label[normalize-space()='จังหวัด']/ancestor::div[@data-slot='input-wrapper']//input[@role='combobox']    เชียงใหม่    
-    Wait Until Element Is Visible    xpath=//li[contains(.,'เชียงใหม่')]                                    5s
+    Wait Until Element Is Visible    xpath=//li[contains(.,'เชียงใหม่')]                                                                              5s
     Click Element                    xpath=//li[contains(.,'เชียงใหม่')]
 
 Fill District
@@ -193,7 +227,7 @@ Fill District
     Click Element                    xpath=//label[normalize-space()='อำเภอ']/ancestor::div[@data-slot='input-wrapper']//input[@role='combobox']
     Clear Element Text               xpath=//label[normalize-space()='อำเภอ']/ancestor::div[@data-slot='input-wrapper']//input[@role='combobox']
     Input Text                       xpath=//label[normalize-space()='อำเภอ']/ancestor::div[@data-slot='input-wrapper']//input[@role='combobox']    แม่ริม    
-    Wait Until Element Is Visible    xpath=//li[contains(.,'แม่ริม')]                                    5s
+    Wait Until Element Is Visible    xpath=//li[contains(.,'แม่ริม')]                                                                               5s
     Click Element                    xpath=//li[contains(.,'แม่ริม')]
 
 Fill SubDistrict
@@ -201,5 +235,42 @@ Fill SubDistrict
     Click Element                    xpath=//label[normalize-space()='ตำบล']/ancestor::div[@data-slot='input-wrapper']//input[@role='combobox']
     Clear Element Text               xpath=//label[normalize-space()='ตำบล']/ancestor::div[@data-slot='input-wrapper']//input[@role='combobox']
     Input Text                       xpath=//label[normalize-space()='ตำบล']/ancestor::div[@data-slot='input-wrapper']//input[@role='combobox']    สันโป่ง    
-    Wait Until Element Is Visible    xpath=//li[contains(.,'สันโป่ง')]                                    5s
+    Wait Until Element Is Visible    xpath=//li[contains(.,'สันโป่ง')]                                                                             5s
     Click Element                    xpath=//li[contains(.,'สันโป่ง')]
+
+##Address according to ID card
+Check according to ID card
+    Select Checkbox    xpath=//input[@aria-label='ใช้ตามที่อยู่ตามบัตรประชาชน']
+
+
+
+##Social Infomation
+Fill Job
+    Wait Until Element Is Visible    xpath=//label[normalize-space()='อาชีพ']/ancestor::div[@data-slot='input-wrapper']//input[@role='combobox']    10s
+    Click Element                    xpath=//label[normalize-space()='อาชีพ']/ancestor::div[@data-slot='input-wrapper']//input[@role='combobox']
+    Clear Element Text               xpath=//label[normalize-space()='อาชีพ']/ancestor::div[@data-slot='input-wrapper']//input[@role='combobox']
+    Input Text                       xpath=//label[normalize-space()='อาชีพ']/ancestor::div[@data-slot='input-wrapper']//input[@role='combobox']    นักเรียน    
+    Wait Until Element Is Visible    xpath=//li[contains(.,'นักเรียน / นักศึกษา')]                                                                  5s
+    Click Element                    xpath=//li[contains(.,'นักเรียน / นักศึกษา')]
+
+Fill Salary
+    Wait Until Element Is Visible    xpath=//label[normalize-space()='รายได้ต่อเดือน']/following::input[@type='text'][1]    10s
+    Click Element                    xpath=//label[normalize-space()='รายได้ต่อเดือน']/following::input[@type='text'][1]
+    Input Text                       xpath=//label[normalize-space()='รายได้ต่อเดือน']/following::input[@type='text'][1]    5000
+
+Fill Hightet Education
+    Click Element                    xpath=//button[.//label[normalize-space()='การศึกษาสูงสุด']]
+    Wait Until Element Is Visible    xpath=//li[normalize-space()='มัธยมศึกษาตอนปลาย / ปวช.']        5s
+    Click Element                    xpath=//li[normalize-space()='มัธยมศึกษาตอนปลาย / ปวช.'] 
+
+Fill Marital status
+    Click Element                    xpath=//button[.//label[normalize-space()='สถานะการสมรส']]
+    Wait Until Element Is Visible    xpath=//li[normalize-space()='โสด']                           5s
+    Click Element                    xpath=//li[normalize-space()='โสด']                           
+
+Check Agree terms and conditions
+    Click Element    xpath=//span[normalize-space()='ข้าพเจ้ายินยอมการให้ข้อมูลส่วนบุคคลสำหรับบริการประชาชนของเทศบาลเทศบาลตำบลเชียงม่วน']/ancestor::label
+
+
+Click Submit from
+    Click Element    xpath=//button[@type='submit' and normalize-space()='ยืนยัน']
